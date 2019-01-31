@@ -12,7 +12,7 @@ import (
 type muxEntry struct {
 	Chain      Chain   `mir:"-"`
 	Group      Group   `mir:"v1"`
-	DotHandler Any     `mir:"/dot/handler/#."`
+	DotHandler Any     `mir:"/dot/handler{\\?}/#."`
 	get        Get     `mir:"/get/"`
 	put        Put     `mir:"/put/"`
 	post       Post    `mir:"/post/"`
@@ -31,7 +31,7 @@ type muxEntry struct {
 // ginEntry gin,echo,httrouter style URN entry
 type ginEntry struct {
 	Chain      Chain   `mir:"-"`
-	DotHandler Any     `mir:"/dot/handler/#."`
+	DotHandler Any     `mir:"/dot/handler{\?}/#."`
 	group      Group   `mir:"v1"`
 	get        Get     `mir:"/get/"`
 	put        Put     `mir:"/put/"`
@@ -50,7 +50,7 @@ type ginEntry struct {
 // irisEntry iris style URN entry
 type irisEntry struct {
 	Chain      Chain   `mir:"-"`
-	DotHandler Any     `mir:"/dot/handler/#."`
+	DotHandler Any     `mir:"/dot/handler{\?}/#."`
 	group      Group   `mir:"v1"`
 	get        Get     `mir:"/get/"`
 	put        Put     `mir:"/put/"`
@@ -264,7 +264,7 @@ func (*errGroupEntry) Get() string {
 }
 
 func DotHandler() string {
-	return "/dot/handler/"
+	return `/dot/handler{\?}/`
 }
 
 func pingChain() string {

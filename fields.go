@@ -257,7 +257,7 @@ func tagInfoFrom(field reflect.StructField) (*tagInfo, error) {
 	if len(tag) > 2 && tag[0] == '/' && tag[1] == '/' {
 		i := 2
 		for i < len(tag) && tag[i] != '/' {
-			i++
+			i = skipIndex(tag, i)
 		}
 		info.Host = tag[2:i]
 		tag = tag[i:]
@@ -269,7 +269,7 @@ func tagInfoFrom(field reflect.StructField) (*tagInfo, error) {
 	}
 	i = 0
 	for i < len(tag) && tag[i] != '?' && tag[i] != '#' {
-		i++
+		i = skipIndex(tag, i)
 	}
 	info.Path = tag[0:i]
 	tag = tag[i:]
@@ -280,14 +280,14 @@ func tagInfoFrom(field reflect.StructField) (*tagInfo, error) {
 		case '#':
 			i := 1
 			for i < len(tag) && tag[i] != '?' {
-				i++
+				i = skipIndex(tag, i)
 			}
 			info.handler = tag[1:i]
 			tag = tag[i:]
 		case '?':
 			i := 1
 			for i < len(tag) && tag[i] != '#' {
-				i++
+				i = skipIndex(tag, i)
 			}
 			queryStr := tag[1:i]
 			if queryStr != "" {
@@ -313,6 +313,19 @@ func tagInfoFrom(field reflect.StructField) (*tagInfo, error) {
 	}
 
 	return info, nil
+}
+
+// skipIndex return new index of tag
+func skipIndex(tag string, i int) int {
+	i++
+	if i < len(tag) && tag[i] == '\\' { // skip escape character
+		if skip := i + 2; skip < len(tag) {
+			i = skip
+		} else {
+			i++
+		}
+	}
+	return i
 }
 
 // inflateGroupInfo setup tag group info to TagMir instance
