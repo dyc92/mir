@@ -6,7 +6,7 @@ package echo_test
 
 import (
 	"github.com/dyc92/mir"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/middleware"
 	"io"
 	"net/http"
