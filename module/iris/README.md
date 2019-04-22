@@ -6,14 +6,14 @@ Mir.Iris module provide mir.Engine implement backend by [Iris](https://github.co
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
     "github.com/kataras/iris"
 	"github.com/kataras/iris/context"
 	"github.com/kataras/iris/middleware/logger"
 	"github.com/kataras/iris/middleware/recover"
 	"net/http"
 
-	mirE "github.com/alimy/mir/module/iris"
+	mirE "github.com/dyc92/mir/module/iris"
 )
 
 type site struct {

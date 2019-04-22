@@ -6,13 +6,13 @@ Mir.Echo module provide mir.Engine implement backend by [Echo](https://github.co
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	"net/http"
 
 	
-	mirE "github.com/alimy/mir/module/echo"
+	mirE "github.com/dyc92/mir/module/echo"
 )
 
 type site struct {

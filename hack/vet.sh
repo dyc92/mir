@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Copyright 2019 Michael Li <alimy@gility.net>. All rights reserved.
+# Copyright 2019 Michael Li <dyc92@gility.net>. All rights reserved.
 # Use of this source code is governed by Apache License 2.0 that
 # can be found in the LICENSE file.
 

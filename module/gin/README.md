@@ -6,11 +6,11 @@ Mir.Gin module provide mir.Engine implement backend by [Gin](https://github.com/
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	
-	mirE "github.com/alimy/mir/module/gin"
+	mirE "github.com/dyc92/mir/module/gin"
 )
 
 type site struct {

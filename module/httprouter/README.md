@@ -6,12 +6,12 @@ Mir.httprouter module provide mir.Engine implement backend by [httprouter](githu
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
     "github.com/julienschmidt/httprouter"
 	"log"
 	"net/http"
 	
-	mirE "github.com/alimy/mir/module/httprouter"
+	mirE "github.com/dyc92/mir/module/httprouter"
 )
 
 type site struct {

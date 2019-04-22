@@ -1,17 +1,17 @@
-// Copyright 2019 Michael Li <alimy@gility.net>. All rights reserved.
+// Copyright 2019 Michael Li <dyc92@gility.net>. All rights reserved.
 // Use of this source code is governed by Apache License 2.0 that
 // can be found in the LICENSE file.
 
 package iris_test
 
 import (
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
 	"github.com/iris-contrib/httpexpect"
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/httptest"
 	"testing"
 
-	. "github.com/alimy/mir/module/iris"
+	. "github.com/dyc92/mir/module/iris"
 )
 
 func TestRegister(t *testing.T) {

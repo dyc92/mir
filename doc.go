@@ -1,4 +1,4 @@
-// Copyright 2019 Michael Li <alimy@gility.net>. All rights reserved.
+// Copyright 2019 Michael Li <dyc92@gility.net>. All rights reserved.
 // Use of this source code is governed by Apache License 2.0 that
 // can be found in the LICENSE file.
 
@@ -68,12 +68,12 @@ Define handler in struct type like below:
 Then register entry such use mux router:
 
 	import (
-		"github.com/alimy/mir"
+		"github.com/dyc92/mir"
 		"github.com/gorilla/mux"
 		"net/http"
 		"log"
 
-		mirE "github.com/alimy/mir/module/mux"
+		mirE "github.com/dyc92/mir/module/mux"
 	)
 
 	func main() {

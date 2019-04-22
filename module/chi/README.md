@@ -6,12 +6,12 @@ Mir.Chi module provide mir.Engine implement backend by [Chi](https://github.com/
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
 	"github.com/go-chi/chi"
 	"log"
 	"net/http"
 	
-	mirE "github.com/alimy/mir/module/chi"
+	mirE "github.com/dyc92/mir/module/chi"
 )
 
 type site struct {

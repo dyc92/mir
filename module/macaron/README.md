@@ -4,7 +4,7 @@ Mir.Macaron module provide mir.Engine implement backend by [Macaron](https://git
 ### Usage 
 * Get module first
 ```bash
-$ go get github.com/alimy/mir/module/macaron@master
+$ go get github.com/dyc92/mir/module/macaron@master
 ```
 
 * Then happy in your heart to codding...
@@ -13,11 +13,11 @@ $ go get github.com/alimy/mir/module/macaron@master
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
 	"github.com/go-macaron/macaron"
 	"net/http"
 	
-	mirE "github.com/alimy/mir/module/macaron"
+	mirE "github.com/dyc92/mir/module/macaron"
 )
 
 type site struct {

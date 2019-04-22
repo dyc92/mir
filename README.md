@@ -1,8 +1,8 @@
 # Mir
-[![Build Status](https://api.travis-ci.com/alimy/mir.svg?branch=master)](https://travis-ci.com/alimy/mir)
-[![codecov](https://codecov.io/gh/alimy/mir/branch/master/graph/badge.svg)](https://codecov.io/gh/alimy/mir)
-[![GoDoc](https://godoc.org/github.com/alimy/mir?status.svg)](https://godoc.org/github.com/alimy/mir)
-[![Release](https://img.shields.io/github/release/alimy/mir.svg?style=flat-square)](https://github.com/alimy/mir/releases)
+[![Build Status](https://api.travis-ci.com/dyc92/mir.svg?branch=master)](https://travis-ci.com/dyc92/mir)
+[![codecov](https://codecov.io/gh/dyc92/mir/branch/master/graph/badge.svg)](https://codecov.io/gh/dyc92/mir)
+[![GoDoc](https://godoc.org/github.com/dyc92/mir?status.svg)](https://godoc.org/github.com/dyc92/mir)
+[![Release](https://img.shields.io/github/release/dyc92/mir.svg?style=flat-square)](https://github.com/dyc92/mir/releases)
 
 Mir is used for register handler to http router(eg: [Gin](https://github.com/gin-gonic/gin), [Chi](https://github.com/go-chi/chi), [Echo](https://github.com/labstack/echo), [Iris](https://github.com/kataras/iris), [Macaron](https://github.com/go-macaron/macaron), [Mux](https://github.com/gorilla/mux), [httprouter](https://github.com/julienschmidt/httprouter))
  depends on struct tag string info that defined in logic object's struct type field.
@@ -11,7 +11,7 @@ Mir is used for register handler to http router(eg: [Gin](https://github.com/gin
 * Get Mir.Gin module first
 
 ```bash
-go get github.com/alimy/mir/module/gin@master
+go get github.com/dyc92/mir/module/gin@master
 ```
 
 * Then happy in codding enjoy your heart...
@@ -20,11 +20,11 @@ go get github.com/alimy/mir/module/gin@master
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	
-	mirE "github.com/alimy/mir/module/gin"
+	mirE "github.com/dyc92/mir/module/gin"
 )
 
 type site struct {
@@ -63,5 +63,5 @@ func main() {
 ```
 
 ### Sample code use mir build web application
-* [github.com/alimy/mir-music](https://github.com/alimy/mir-music) : use [mir](https://github.com/alimy/mir)+[gin](https://github.com/gin-gonic/gin) build a sample music infomation service app like [spring-music](https://github.com/cloudfoundry-samples/spring-music).
-* [github.com/alimy/chi-music](https://github.com/alimy/chi-music) : use [mir](https://github.com/alimy/mir)+[go-chi](https://github.com/go-chi/chi) implement [spring-music](https://github.com/cloudfoundry-samples/spring-music) in golang.
+* [github.com/dyc92/mir-music](https://github.com/dyc92/mir-music) : use [mir](https://github.com/dyc92/mir)+[gin](https://github.com/gin-gonic/gin) build a sample music infomation service app like [spring-music](https://github.com/cloudfoundry-samples/spring-music).
+* [github.com/dyc92/chi-music](https://github.com/dyc92/chi-music) : use [mir](https://github.com/dyc92/mir)+[go-chi](https://github.com/go-chi/chi) implement [spring-music](https://github.com/cloudfoundry-samples/spring-music) in golang.

@@ -6,12 +6,12 @@ Mir.Mux module provide mir.Engine implement backend by [Mux](https://github.com/
 package main
 
 import(
-	"github.com/alimy/mir"
+	"github.com/dyc92/mir"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
 	
-	mirE "github.com/alimy/mir/module/mux"
+	mirE "github.com/dyc92/mir/module/mux"
 )
 
 type site struct {
